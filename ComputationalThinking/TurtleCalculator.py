@@ -18,6 +18,7 @@ def multiply(num1,num2):
     return abs(num1*num2)
 
 def draw_shape(gap, edgeSize, numOfEdges, x1, x2, turtle, dashed=False, persentage=0):
+	from math import ceil
 	turtle.penup()
 	turtle.goto(x1, x2)
 	turtle.pendown()
@@ -36,10 +37,10 @@ def draw_shape(gap, edgeSize, numOfEdges, x1, x2, turtle, dashed=False, persenta
 		for i in range(numOfEdges):
 			turtle.forward(edgeSize)
 			if(numOfEdges % 2 == 1):
-				if(i == (round(numOfEdges/4)-1)):
+				if(i == (ceil(numOfEdges/4))-1):
 					pos1 , foo= turtle.position()
 			else:
-				if(i == (round(numOfEdges/4))):
+				if(i == (ceil(numOfEdges/4))-1):
 					pos1 , foo= turtle.position()
 			if(i == int(numOfEdges/2)):
 				foo, pos2 = turtle.position()
@@ -71,6 +72,7 @@ def turtle_calculator(num1, num2, operation, edgeSize, gap, numOfEdges):
 	try:
 		result = operation(num1,num2)
 		print(result)
+		screen_size = edgeSize*numOfEdges
 		from math import ceil, cos, modf
 		canvas = ceil((result**(1/2)))
 		pos1, pos2 = 0,0
@@ -100,7 +102,7 @@ def turtle_calculator(num1, num2, operation, edgeSize, gap, numOfEdges):
 		print("Operation unsuccessful !")
 
 if __name__ == '__main__':
-	turtle_calculator(3,4.2,multiply,40,10,7)
+	turtle_calculator(1,8,multiply,20,10,7)
 
 
 
