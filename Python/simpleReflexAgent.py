@@ -1,3 +1,14 @@
+"""
+	simpleReflexAgent.py
+	Simple Reflex Agent implementation. 
+    
+    THIS IMPLEMENTATION IS NOT COMPLETE! MIGHT NOT WORK
+    FOR ANOTHER DATASET.
+
+	Created by batuhanyenidunya on 19.02.2020.
+	https://github.com/batuhanyndny
+"""
+
 ENV = {
 	"point A" : {
 		"is_dirty" : True,

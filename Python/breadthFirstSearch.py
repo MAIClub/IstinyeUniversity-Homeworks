@@ -1,3 +1,10 @@
+"""
+	breadthFirstSearch.py
+	Breadth First Search algorithm implementation using adjacency list.
+
+	Created by batuhanyenidunya on 13.03.2020.
+	https://github.com/batuhanyndny
+"""
 class Node:
 
 	def __init__(self,parent, child, label):

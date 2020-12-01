@@ -1,3 +1,14 @@
+"""
+	naivebayes.py
+	Naive Bayes algorithm implementation. 
+    
+    THIS IMPLEMENTATION IS NOT COMPLETE! MIGHT NOT WORK
+    FOR ANOTHER DATASET.
+
+	Created by batuhanyenidunya on 24.11.2020.
+	https://github.com/batuhanyndny
+"""
+
 import numpy
 import pandas as pd
 

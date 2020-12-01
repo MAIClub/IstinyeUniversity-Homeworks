@@ -3,7 +3,7 @@
 //  towerOfHanoi
 //
 //  Created by batuhanyenidunya on 9.12.2019.
-//  Copyright © 2019 batuhanyenidunya. All rights reserved.
+//  https://github.com/batuhanyndny
 //
 
 #include <stdio.h>
